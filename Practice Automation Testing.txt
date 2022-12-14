@@ -1,0 +1,70 @@
+
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--disable-notifications");
+//		ChromeDriver driver = new ChromeDriver(options);	
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//		driver.get("http://practice.automationtesting.in/");
+//		
+//		
+//		
+////		driver.findElement(By.id("dismiss-button")).click();
+////		
+//		driver.findElement(By.xpath("//a[text()='Shop']")).click();
+//		driver.findElement(By.xpath("//button[text()='Filter']")).click();
+////		WebElement ele = driver.findElement(By.xpath("//div[@class='ui-slider-range ui-corner-all ui-widget-header']"));
+////		Actions builder = new Actions(driver);
+////		builder.dragAndDropBy(ele, 0, 86).perform();
+		
+		
+
+//		ChromeOptions options = new ChromeOptions(); 
+//		options. addArguments("load-extension=/path/to/extension"); 
+//		DesiredCapabilities capabilities = new DesiredCapabilities(); 
+//		capabilities. setCapability(ChromeOptions. CAPABILITY, options); 
+//		ChromeDriver driver = new ChromeDriver(options);
+
+//		
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//		
+//		
+//		driver.get("http://practice.automationtesting.in/");
+//		
+//		driver.findElement(By.linkText("Shop")).click();
+//		
+//		WebElement leftHandle = driver.findElement(By.xpath("(//span[@class='ui-slider-handle ui-corner-all ui-state-default'])[2]"));
+//		Actions action = new Actions(driver);
+//		action.dragAndDropBy(leftHandle, -85, 0).release().perform();
+//		
+//		Thread.sleep(3000);
+//		driver.findElement(By.xpath("//button[@class='button']")).click();
+////		Thread.sleep(3000);
+//		
+//		
+//		List<WebElement> bookList = driver.findElements(By.xpath("((//ul[@class='products masonry-done']//li)//h3)"));
+//		
+//		int size = bookList.size();
+//		System.out.println(size);
+//		
+//		List<String> bookName = new ArrayList<String>();
+//		
+//		for(int i =1;i<=size-1;i++)
+//		
+//		{
+//			String bookName_ = driver.findElement(By.xpath("((//ul[@class='products masonry-done']//li)//h3)["+i+"]")).getText();
+//			System.out.println(bookName_);
+//			bookName.add(bookName_);
+//		}
+//		
+//		
+//		Collections.sort(bookName);
+//		
+//		System.out.println(bookName);
+		
+		
+//		
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.get("http://practice.automationtesting.in");
